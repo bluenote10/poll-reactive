@@ -11,7 +11,9 @@ on:
     - cron: '0 0 * * 0' # at 00:00 every Sunday
 
 jobs:
+
   build:
+    name: Rust ${{ matrix.rust }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -20,7 +22,6 @@ jobs:
           - stable
           - nightly
 
-    name: Rust ${{ matrix.rust }}
 
     steps:
       - uses: actions/checkout@master
