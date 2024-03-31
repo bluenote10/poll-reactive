@@ -1,3 +1,11 @@
+# References:
+# - https://users.rust-lang.org/t/does-anyone-use-github-actions-to-run-cargo-publish/92374
+# - https://github.com/azriel91/fn_graph/blob/main/.github/workflows/publish.yml
+# - https://pratikpc.medium.com/publishing-crates-using-github-actions-165ee67780e1
+#
+# To push a new version, use `./scripts/add_tag_and_publish.sh`
+#
+
 on:
   push:
     tags:
